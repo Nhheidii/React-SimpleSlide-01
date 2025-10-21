@@ -1,0 +1,81 @@
+.App1 {
+  font-family: sans-serif;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  max-width: 98vw;
+  overflow-x: auto;
+}
+.App1::-webkit-scrollbar {
+  height: 6px; /* ✅ độ dày của thanh cuộn ngang */
+}
+
+.App1::-webkit-scrollbar-track {
+  background: transparent; /* nền của vùng track */
+}
+
+.App1::-webkit-scrollbar-thumb {
+  background-color: plum; /* ✅ màu của thanh cuộn */
+  border-radius: 4px; /* ✅ bo tròn thanh */
+}
+
+.App1::-webkit-scrollbar-thumb:hover {
+  background-color: #b86fb8; /* ✅ đổi màu khi hover */
+}
+.li-nonDot {
+  list-style-type: none;
+}
+.img-list {
+  display: flex;
+}
+.display {
+  padding: 0 30px;
+}
+
+body {
+  margin: 0;
+}
+
+.course ul {
+  list-style-type: none;
+}
+
+.ans ul {
+  list-style-type: none;
+}
+
+.quiz {
+  border: solid 2px plum;
+  width: 60%;
+  height: 300px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.course {
+  border: solid 2px plum;
+  width: 25vw; /* ✅ sửa từ 25wh → 25vw */
+  margin: 3px;
+  box-sizing: border-box;
+  text-align: center; /* ✅ sửa text-content */
+  padding-right: 30px;
+  flex-shrink: 0; /* ✅ để nó không tự co lại khi tràn */
+}
+
+.course:hover {
+  background-color: plum;
+  color: white;
+}
+
+.active {
+  background-color: orange;
+}
+
+.true {
+  background-color: green;
+}
+
+.wrong {
+  background-color: red;
+}
